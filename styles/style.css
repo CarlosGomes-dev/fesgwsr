@@ -179,7 +179,7 @@ video {
     font-size:7vw;
     color: red;
     font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
+    font-weight: 1000;
     padding-bottom:2%;
     letter-spacing: 0.5px;
 
@@ -297,29 +297,18 @@ video {
 
 .conteudo__sobre__nos__titulo{
     text-align:start;
-    padding: 5% 3% 1% 5%;
+    padding: 5% 3% 8% 5%;
     font-size: 4.5rem;
     color:red;
     font-family: "Monoton", sans-serif;
-    font-weight: 400;
-    
-    
+    font-weight: 400;  
 }
-
-.linha__sobre__nos{
-    flex-grow: 1;
-    height: 2.5px; /* Altura da linha */
-    background-color: #000; /* Cor da linha */
-   margin-top:4%;
-}
-
-
 
 .conteudo__sobre__nos__conteudo{
     display: flex;
     justify-content: center;
     border-radius: 50px;
-    gap:5px;
+    gap:10px;
 }
 
 .conteudo__sobre__nos__conteudo__conteudo {
@@ -333,11 +322,11 @@ video {
 .carousel {
     position: relative;
     width:50%;
-    height:70%;
+    height:110%;
     overflow: hidden;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
-    padding-bottom: 10%;
+    padding-bottom: 4%;
 }
 
 .carousel-images {
@@ -363,14 +352,14 @@ video {
 
 .text-section {
     width: 50%;
-    height:50%;
+    height:100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    text-align: initial;
+    justify-content:first baseline;
     align-items: center;
     gap: 1px;
-    padding: 6% 1% 1% 1%;
+    padding: 3% 1% 1% 1%;
     border-radius: 100px;
 }
 
@@ -401,6 +390,7 @@ video {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 
 }
 .missao{
@@ -412,8 +402,8 @@ video {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 2% 5% 2% 5%;
-    background-color:#e4e0e0;
+    padding: 3.5% 5% 3.5% 5%;
+    background-color:#ece9e9;
     border-radius: 30px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -424,6 +414,9 @@ video {
     justify-content: center;
     color: #000000;
     box-sizing: border-box;
+    font-size: 1vw;
+    line-height: 20px;
+    color: #000;
 }
 
 .box__missao p:hover{
@@ -434,8 +427,42 @@ video {
     -webkit-transform: scale(1.5);
     transform: scale(1.2);
     color: #fff;
-    font-size: 1rem;
+    font-size: 1vw;
+    padding: 3.5% 5% 3.5% 5%;
 }
+
+.box__missao ul{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:2%;
+    background-color:#ece9e9;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    transition: all .5s;
+    border: px solid transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    box-sizing: border-box;
+    font-size: 1vw;
+    gap: 10px;
+    color: #000;
+}
+
+.box__missao ul:hover{
+    background-color: #df0d0d;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Sombra */
+    border: 2px solid  #df0d0d;
+    border-radius: 50px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+    color: #fff;
+    font-size: 1vw;
+}
+
 
 
 .conteudo__contatos{
@@ -844,19 +871,18 @@ width: 30%;
 .conteudo__sobre__nos__conteudo__conteudo{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:1px;
 }
 
 .carousel {
     position: relative;
-    width:80%;
-    height:70vh;
-    margin-bottom: 25px;
+    width:70%;
+    height:60vh;
   
 }
-
 .text-section{
     width: 100%;
+    height: 50%;
 }
 
 .text-section p {
@@ -867,7 +893,7 @@ width: 30%;
 }
 
 .box__missao{
-   gap:50px;
+   gap:40px;
    padding-top:5%;
    display: flex;
    flex-direction: column;
@@ -877,8 +903,28 @@ width: 30%;
 }
 
 .box__missao p{
-    padding:3%;
-    font-size: 0.8rem;
+    padding:5%;
+    font-size: 1.5vw;
+    width: 80%; 
+
+}
+
+.box__missao p:hover{
+    padding:5%;
+    font-size: 1.5vw;
+
+}
+
+.box__missao ul{
+    padding:2%;
+    font-size: 1.5vw;
+    width: 80%;
+
+}
+
+.box__missao ul:hover{
+    padding:2%;
+    font-size: 1.5vw;
 
 }
 
@@ -989,14 +1035,28 @@ width: 30%;
     }
 
     .box__missao p{
-
-        width: 70%;
-        padding: 3% 6% 3% 6%;
-
+        padding:5%;
+        font-size: 2.5vw;
+        width: 80%; 
+    
     }
-
+    
     .box__missao p:hover{
-        font-size: 0.7rem;
+        padding:5%;
+        font-size: 2.5vw;
+    
+    }
+    
+    .box__missao ul{
+        padding:2%;
+        font-size: 2.5vw;
+        width: 80%;
+    
+    }
+    
+    .box__missao ul:hover{
+        padding:2%;
+        font-size: 2.5vw;
     
     }
 
